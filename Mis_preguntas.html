@@ -12,19 +12,23 @@
 
         </div>
         <nav id="padre-a">
-            <ul class = "Menuestilos">
-				<li><a href="InicioSesion.html">Inicio de Sesión</a></li>
-				<li><a href="Registro.html">Registro</a></li>
-                <li><a href="Principal.html">Principal</a></li>
-                <li><a href="YoNunca.html">Yo Nunca</a></li>
-                <li><a href="VerdadOReto.html">Verdad o Reto</a></li>
-                <li><a href="QuePrefieres.html">¿Qué prefieres?</a></li>
-                <li><a href="Crearcuentaaviso.html">Aviso crear cuenta</a></li>
-                <li><a href="Tus_preguntas.html">Tus_preguntas</a></li>
-                <li><a href="Mis_preguntas.html">Mis_preguntas</a></li>
-                <li><a href="Buscar_preguntas.html">Buscar_preguntas</a></li>
+            <div class="menu-toggle">
+              <div class="menu-icon"></div>
+            </div>
+            <ul class="Menuestilos">
+              <li><a href="InicioSesion.html">Inicio de Sesión</a></li>
+              <li><a href="Registro.html">Registro</a></li>
+              <li><a href="Principal.html">Principal</a></li>
+              <li><a href="YoNunca.html">Yo Nunca</a></li>
+              <li><a href="VerdadOReto.html">Verdad o Reto</a></li>
+              <li><a href="QuePrefieres.html">¿Qué prefieres?</a></li>
+              <li><a href="Crearcuentaaviso.html">Aviso crear cuenta</a></li>
+              <li><a href="Tus_preguntas.html">Tus_preguntas</a></li>
+              <li><a href="Mis_preguntas.html">Mis_preguntas</a></li>
+              <li><a href="Buscar_preguntas.html">Buscar_preguntas</a></li>
             </ul>
-        </nav>
+          </nav>
+          
     </header>		
 
     <h2> Mis preguntas</h2>
@@ -35,6 +39,12 @@
       
         <p id="p_dis">La clase <b>"Mis_preguntas"</b>  representa una ventana que muestra las preguntas del usuario. Esta ventana tiene un diseño personalizado y se utiliza para visualizar las preguntas del jugador en el juego.</p>
     </div>
-      
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+    
+            menuToggle.addEventListener('click', function() {
+              this.classList.toggle('active');
+            });
+            </script>  
 </body>
   

@@ -15,19 +15,23 @@
 
         </div>
         <nav id="padre-a">
-            <ul class = "Menuestilos">
-				<li><a href="InicioSesion.html">Inicio de Sesión</a></li>
-				<li><a href="Registro.html">Registro</a></li>
-                <li><a href="Principal.html">Principal</a></li>
-                <li><a href="YoNunca.html">Yo Nunca</a></li>
-                <li><a href="VerdadOReto.html">Verdad o Reto</a></li>
-                <li><a href="QuePrefieres.html">¿Qué prefieres?</a></li>
-                <li><a href="Crearcuentaaviso.html">Aviso crear cuenta</a></li>
-                <li><a href="Tus_preguntas.html">Tus_preguntas</a></li>
-                <li><a href="Mis_preguntas.html">Mis_preguntas</a></li>
-                <li><a href="Buscar_preguntas.html">Buscar_preguntas</a></li>
+            <div class="menu-toggle">
+              <div class="menu-icon"></div>
+            </div>
+            <ul class="Menuestilos">
+              <li><a href="InicioSesion.html">Inicio de Sesión</a></li>
+              <li><a href="Registro.html">Registro</a></li>
+              <li><a href="Principal.html">Principal</a></li>
+              <li><a href="YoNunca.html">Yo Nunca</a></li>
+              <li><a href="VerdadOReto.html">Verdad o Reto</a></li>
+              <li><a href="QuePrefieres.html">¿Qué prefieres?</a></li>
+              <li><a href="Crearcuentaaviso.html">Aviso crear cuenta</a></li>
+              <li><a href="Tus_preguntas.html">Tus_preguntas</a></li>
+              <li><a href="Mis_preguntas.html">Mis_preguntas</a></li>
+              <li><a href="Buscar_preguntas.html">Buscar_preguntas</a></li>
             </ul>
-        </nav>
+          </nav>
+          
     </header>	
     <h2>Tus preguntas</h2>
 	<div id="miDiv">
@@ -41,6 +45,12 @@
         <p>En resumen, la pantalla <b>"TUS_PREGUNTAS"</b> te permite añadir, borrar y buscar preguntas, así como jugar con tus propias creaciones. Esta funcionalidad te da el control total sobre las preguntas utilizadas en el juego, permitiéndote personalizar y enriquecer tu experiencia de juego con preguntas de tu elección.</p>
         </div>
     </div>
-	  
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+    
+            menuToggle.addEventListener('click', function() {
+              this.classList.toggle('active');
+            });
+            </script>
 </body>
 </html>

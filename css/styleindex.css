@@ -1,298 +1,290 @@
 /* Estilos para el menú */
-*{
+* {
   padding: 0;
   margin: 0;
 }
-.test h1{
- 
+
+.test h1 {
   text-align: center;
-  background-color:rgb(36, 33, 33);
- 
+  background-color: rgb(36, 33, 33);
   padding: 20px;
 }
 
-.test a{
-color: #F2F2F2;
-text-decoration: none;
+.test a {
+  color: #f2f2f2;
+  text-decoration: none;
 }
-nav ul{
-  background-color:rgb(36, 33, 33);
+
+nav ul {
+  background-color: rgb(36, 33, 33);
   color: black;
   text-align: center;
   width: 100%;
   list-style-type: none;
-
 }
-nav li{
+
+nav li {
   display: inline-flex;
 }
 
 nav a {
   text-decoration: none;
   color: white;
-
   padding: 15px;
   width: 200px;
 }
-nav li:hover{
+
+nav li:hover {
   background-color: rgb(194, 187, 187);
-  
 }
-  
-  /* Estilos para el logo */
-  .logo img {
-    height: 70px;
-  }
-  
-  .slider {
-    position: relative;
-    width: 100%;
-    height: 400px;
-    overflow: hidden;
-  }
-  
-  .slide {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-  }
-  
-  .active {
-    opacity: 1;
-  }
-  
-  .slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  .prev, .next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 30px;
-    height: 30px;
-    background-color: #fff;
-    color: #222;
-    text-align: center;
-    line-height: 30px;
-    cursor: pointer;
-  }
-  
-  .prev {
-    left: 20px;
-  }
-  
-  .next {
-    right: 20px;
-  }
-  
-  #introduccion {
-    background-color:hsl(16, 57%, 62%);
-    padding: 50px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    
-  }
-  
-  #introduccion h1 {
-    font-size: 36px;
-    color: #333;
-    font-style: italic;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  }
-  
-  #introduccion p {
-    font-size: 18px;
-    color:#333;
-   
-  }
+
+/* Estilos para el logo */
+.logo img {
+  height: 70px;
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.active {
+  opacity: 1;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  color: #222;
+  text-align: center;
+  line-height: 30px;
+  cursor: pointer;
+}
+
+.prev {
+  left: 20px;
+}
+
+.next {
+  right: 20px;
+}
+
+#introduccion {
+  background-color: hsl(16, 57%, 62%);
+  padding: 50px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#introduccion h1 {
+  font-size: 36px;
+  color: #333;
+  font-style: italic;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#introduccion p {
+  font-size: 18px;
+  color: #333;
+}
 
 /* Estilos para el encabezado de la sección de modos de juego */
- h2 {
-    font-size: 36px;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-top: 80px;
-    margin-bottom: 60px;
-    text-align: center;
-    color: #333;
-
-
-    display: block;
+h2 {
+  font-size: 36px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 80px;
+  margin-bottom: 60px;
+  text-align: center;
+  color: #333;
+  display: block;
   width: 100%;
   text-align: center;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-
-  }
-  
-  /* Estilos para el contenedor de la descripción de los modos de juego */
-  #descripcion-juegos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  /* Estilos para cada modo de juego */
-  .modo-juego {
-    width: 300px;
-    margin: 20px;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    background-color: #f4f4f4;
-    text-align: center;
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  /* Estilos para el título de cada modo de juego */
-  .modo-juego h3 {
-    font-size: 24px;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-    color: #333;
-  }
-  
-  /* Estilos para el texto de cada modo de juego */
-  .modo-juego p {
-    font-size: 16px;
-    line-height: 1.5;
-    color: #666;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-style: italic;
-  }
-  
-  /* Estilos al pasar el mouse por encima de cada modo de juego */
-  .modo-juego:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
-    background-color: #fff;
-  }
-  
-
-  /* Estilos para la sección de participantes */
-#participantes {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    background-color:hsl(16, 57%, 69%);
-    padding: 50px 0;
-  }
-  
-  /* Estilos para cada participante */
-  .participante {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 250px;
-    margin: 20px;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    background-color: #fff;
-    text-align: center;
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  /* Estilos para la imagen de cada participante */
-  .participante img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    margin-bottom: 20px;
-  }
-  
-  /* Estilos para el nombre de cada participante */
-  .participante h3 {
-    font-size: 24px;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 10px;
-  }
-  
-  /* Estilos para la descripción de cada participante */
-  .participante p {
-    font-size: 16px;
-    color: #666;
-    margin-bottom: 20px;
-  }
-  
-  /* Estilos al pasar el mouse por encima de cada participante */
-  .participante:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
-  }
-
-  .gallery {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    max-width: 1800px;
-    margin: 0 auto;
-  }
-  
-  .gallery img {
-    width: calc(20% - 10px);
-    margin: 5px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .gallery img:hover {
-    transform: scale(1.2);
-  }
-  
-  .Logo{
-    font-style: italic;
-    font-size: 4em;
-  }
-
-  .red{
-    color:red
-  }
-.white{
-  color:white
 }
 
-.Menuestilos{
+/* Estilos para el contenedor de la descripción de los modos de juego */
+#descripcion-juegos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Estilos para cada modo de juego */
+.modo-juego {
+  width: 300px;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  background-color: #f4f4f4;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Estilos para el título de cada modo de juego */
+.modo-juego h3 {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Estilos para el texto de cada modo de juego */
+.modo-juego p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #666;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-style: italic;
+}
+
+/* Estilos al pasar el mouse por encima de cada modo de juego */
+.modo-juego:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+  background-color: #fff;
+}
+
+/* Estilos para la sección de participantes */
+#participantes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(16, 57%, 69%);
+  padding: 50px 0;
+}
+
+/* Estilos para cada participante */
+.participante {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 250px;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  background-color: #fff;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Estilos para la imagen de cada participante */
+.participante img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  margin-bottom: 20px;
+}
+
+/* Estilos para el nombre de cada participante */
+.participante h3 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Estilos para la descripción de cada participante */
+.participante p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Estilos al pasar el mouse por encima de cada participante */
+.participante:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1800px;
+  margin: 0 auto;
+}
+
+.gallery img {
+  width: calc(20% - 10px);
+  margin: 5px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out;
+}
+
+.gallery img:hover {
+  transform: scale(1.2);
+}
+
+.Logo {
+  font-style: italic;
+  font-size: 4em;
+}
+
+.red {
+  color: red;
+}
+
+.white {
+  color: white;
+}
+
+.Menuestilos {
   font-style: oblique;
 }
 
-.Equipodetrabajo{
+.Equipodetrabajo {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-h3{
+h3 {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-.Modojuego{
-  color:black;
+.Modojuego {
+  color: black;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  
 }
 
-.Intro{
+.Intro {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   color: #222;
 }
 
-.Cuerpo{
-  background-color:hsl(16, 57%, 69%);
+.Cuerpo {
+  background-color: hsl(16, 57%, 69%);
 }
-
-
 
 #miDiv {
   background-color: #ffffff;
@@ -323,4 +315,81 @@ h3{
 }
 
 
+/* Estilos para el menú en dispositivos móviles */
+@media (max-width: 767px) {
+  nav {
+    text-align: center;
+  }
+  nav ul {
+    display: none;
+  }
+  nav li {
+    display: block;
+    margin-bottom: 10px;
+  }
+  nav a {
+    display: inline-block;
+    width: auto;
+    padding: 10px;
+  }
+}
 
+/* Estilos para el contenedor de la descripción de los modos de juego en dispositivos móviles */
+@media (max-width: 767px) {
+  #descripcion-juegos {
+    flex-direction: column;
+    align-items: center;
+  }
+  .modo-juego {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+
+/* Estilos para la sección de participantes en dispositivos móviles */
+@media (max-width: 767px) {
+  #participantes {
+    flex-direction: column;
+    align-items: center;
+  }
+  .participante {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+
+/* Estilos para la galería de imágenes en dispositivos móviles */
+@media (max-width: 767px) {
+  .gallery img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .Menuestilos {
+    display: none;
+  }
+  
+  .menu-toggle {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .menu-icon {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 5px auto;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .menu-toggle.active .menu-icon {
+    background-color: transparent;
+  }
+  
+  .menu-toggle.active ~ .Menuestilos {
+    display: block;
+  }
+}
